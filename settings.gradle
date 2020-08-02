@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "Does it Fizz or Buzz"

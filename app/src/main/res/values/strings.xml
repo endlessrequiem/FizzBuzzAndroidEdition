@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Does it Fizz or Buzz?</string>
+    <string name="check">Check</string>
+    <string name="testANumber">Test a number</string>
+    <string name="fizz">fizz</string>
+    <string name="buzz">buzz</string>
+    <string name="fizzbuzz">FIZZBUZZ!</string>
+    <string name="neither">is neither fizz nor buzz</string>
+    <string name="rangeCheck">FizzBuzz Range</string>
+    <string name="min">Min</string>
+    <string name="max">Max</string>
+    <string name="to">to</string>
+</resources>

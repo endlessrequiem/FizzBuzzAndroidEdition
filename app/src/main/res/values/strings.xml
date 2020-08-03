@@ -10,4 +10,6 @@
     <string name="min">Min</string>
     <string name="max">Max</string>
     <string name="to">to</string>
+    <string name="generatorActivity">FizzBuzz Number Generator</string>
+
 </resources>

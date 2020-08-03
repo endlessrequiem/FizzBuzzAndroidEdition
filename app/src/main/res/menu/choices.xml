@@ -6,6 +6,10 @@
         android:title="@string/rangeCheck"
         app:showAsAction="never"
         />
-
+    <item
+        android:id="@+id/goToGeneratorActivity"
+        android:title="@string/generatorActivity"
+        app:showAsAction="never"
+        />
 
 </menu>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/generatedNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="166dp"
+        android:layout_marginTop="125dp"
+        android:layout_marginEnd="166dp"
+        android:layout_marginBottom="558dp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/fizzButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="157dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="157dp"
+        android:layout_marginBottom="32dp"
+        android:background="#000000"
+        android:text="@string/fizz"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/buzzButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/generatedNumber" />
+
+    <Button
+        android:id="@+id/buzzButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="157dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="157dp"
+        android:layout_marginBottom="32dp"
+        android:background="#000000"
+        android:text="@string/buzz"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/fizzbuzzButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fizzButton" />
+
+    <Button
+        android:id="@+id/fizzbuzzButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="157dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="157dp"
+        android:layout_marginBottom="336dp"
+        android:background="#000000"
+        android:text="@string/fizzbuzz"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buzzButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -74,6 +74,11 @@ class MainActivity : AppCompatActivity() {
             overridePendingTransition(0, 0)
             true
         }
+        R.id.goToGeneratorActivity -> {
+            startActivity(Intent(this@MainActivity, GeneratorActivity::class.java))
+            overridePendingTransition(0, 0)
+            true
+        }
 
         else -> super.onOptionsItemSelected(item)
     }

@@ -26,30 +26,29 @@ class MainActivity : AppCompatActivity() {
 
         testButton.setOnClickListener {
             val userInput = input.text.toString()
-            val userInputInt = userInput.toInt()
 
             if (userInput.isEmpty()) { Toast.makeText(
                 applicationContext,
                 "No Input!",
                 Toast.LENGTH_SHORT
             ).show() }
-            else if (userInputInt == 0) {Toast.makeText(
+            else if (userInput.toInt() == 0) {Toast.makeText(
                 applicationContext,
                 "Use a non-Zero number",
                 Toast.LENGTH_SHORT
             ).show() }
-            else if (userInputInt >= 1000000000) {Toast.makeText(
+            else if (userInput.toInt() >= 1000000000) {Toast.makeText(
                 applicationContext,
                 "Number too high",
                 Toast.LENGTH_SHORT
             ).show() }
             else {
-                if (userInputInt % 3 == 0 && userInputInt % 5 == 0) {
+                if (userInput.toInt() % 3 == 0 && userInput.toInt() % 5 == 0) {
                     result.text = getString(R.string.fizzbuzz)
                     animateThis.scaler(result)
-                } else if (userInputInt % 3 == 0) {
+                } else if (userInput.toInt() % 3 == 0) {
                     result.text = getString(R.string.fizz)
-                } else if (userInputInt % 5 == 0){
+                } else if (userInput.toInt() % 5 == 0){
                     result.text = getString(R.string.buzz)
                 } else {
                     result.text = (userInput + " " + getString(R.string.neither))

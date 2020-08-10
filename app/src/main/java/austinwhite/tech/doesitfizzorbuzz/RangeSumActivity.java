@@ -43,6 +43,9 @@ public class RangeSumActivity extends AppCompatActivity {
             } else if (Integer.parseInt(minString) > Integer.parseInt(maxString)) {
                 Toast.makeText(getApplicationContext(), "Min is higher than Max!", Toast.LENGTH_SHORT).show();
 
+            } else if (Integer.parseInt(maxString) - Integer.parseInt(minString) > 10000) {
+                Toast.makeText(getApplicationContext(), "Range too high! (Limit 10,000)", Toast.LENGTH_SHORT).show();
+
             } else {
                 int min = Integer.parseInt(minString);
                 int max = Integer.parseInt(maxString);

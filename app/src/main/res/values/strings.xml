@@ -11,5 +11,7 @@
     <string name="max">Max</string>
     <string name="to">to</string>
     <string name="generatorActivity">FizzBuzz Number Generator</string>
-
+    <string name="rangeSumActivity">FizzBuzz Range Sum</string>
+    <string name="rangeSumExplain">This one takes all the fizz, buzz, and fizzbuzz numbers in a range and adds them
+    together.</string>
 </resources>

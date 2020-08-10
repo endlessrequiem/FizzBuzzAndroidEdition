@@ -13,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity
 
 
 class MainActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -78,8 +79,15 @@ class MainActivity : AppCompatActivity() {
             overridePendingTransition(0, 0)
             true
         }
+        R.id.goToRangeSumActivity -> {
+            startActivity(Intent(this@MainActivity, RangeSumActivity::class.java))
+            overridePendingTransition(0, 0)
+            true
+        }
 
         else -> super.onOptionsItemSelected(item)
     }
+
+
 }
 

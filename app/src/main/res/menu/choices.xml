@@ -12,4 +12,10 @@
         app:showAsAction="never"
         />
 
+    <item
+        android:id="@+id/goToRangeSumActivity"
+        android:title="@string/rangeSumActivity"
+        app:showAsAction="never"
+        />
+
 </menu>

@@ -11,8 +11,7 @@ import java.util.ArrayList;
 
 
 public class RangeSumActivity extends AppCompatActivity {
-
-
+    
     @Override
     protected void onCreate (Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
 
             if (userInput.isEmpty()) { Toast.makeText(
                 applicationContext,
-                "No Input!",
+                "There is no Input!",
                 Toast.LENGTH_SHORT
             ).show() }
             else if (userInput.toInt() == 0) {Toast.makeText(

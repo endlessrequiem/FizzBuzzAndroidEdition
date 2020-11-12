@@ -2,6 +2,9 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
+        android:id="@+id/home"
+        android:title="@string/app_name" />
+    <item
         android:id="@+id/goToRangeCheckActivity"
         android:title="@string/rangeCheck"
         app:showAsAction="never"

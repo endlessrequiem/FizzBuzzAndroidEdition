@@ -14,4 +14,5 @@
     <string name="rangeSumActivity">FizzBuzz Range Sum</string>
     <string name="rangeSumExplain">This one takes all the fizz, buzz, and fizzbuzz numbers in a range and adds them
     together.</string>
+    <string name="empty">Empty</string>
 </resources>

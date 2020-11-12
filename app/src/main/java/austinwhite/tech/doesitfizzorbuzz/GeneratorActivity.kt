@@ -1,6 +1,9 @@
 package austinwhite.tech.doesitfizzorbuzz
 
+import android.content.Intent
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -47,6 +50,37 @@ class GeneratorActivity : AppCompatActivity() {
 
         }
 
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        val inflater = menuInflater
+        inflater.inflate(R.menu.choices, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem) = when (item.itemId) {
+        R.id.home -> {
+            startActivity(Intent(this@GeneratorActivity, MainActivity::class.java))
+            overridePendingTransition(0, 0)
+            true
+        }
+        R.id.goToRangeCheckActivity -> {
+            startActivity(Intent(this@GeneratorActivity, RangeCheckActivity::class.java))
+            overridePendingTransition(0, 0)
+            true
+        }
+        /* R.id.goToGeneratorActivity -> {
+            startActivity(Intent(this@GeneratorActivity, GeneratorActivity::class.java))
+            overridePendingTransition(0, 0)
+            true
+        } */
+        R.id.goToRangeSumActivity -> {
+            startActivity(Intent(this@GeneratorActivity, RangeSumActivity::class.java))
+            overridePendingTransition(0, 0)
+            true
+        }
+
+        else -> super.onOptionsItemSelected(item)
     }
 
     override fun onSupportNavigateUp(): Boolean {

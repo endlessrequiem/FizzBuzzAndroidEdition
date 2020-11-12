@@ -69,6 +69,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem) = when (item.itemId) {
+        /* R.id.home -> {
+            startActivity(Intent(this@MainActivity, MainActivity::class.java))
+            overridePendingTransition(0, 0)
+            true
+        } */
         R.id.goToRangeCheckActivity -> {
             startActivity(Intent(this@MainActivity, RangeCheckActivity::class.java))
             overridePendingTransition(0, 0)
